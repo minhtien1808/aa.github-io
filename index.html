@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        div.container {
+            margin: 10vh;
+        }
+        
+        .btn {
+            margin-top: 20px;
+            margin-left: 50px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Crush có yêu bạn không</h1>
+        <button type="button" class="btn" id="btn-1">Có</button>
+        <button type="button" class="btn" id="btn-2">Không</button>
+    </div>
+    <script>
+        const button = document.querySelectorAll('button');
+        button.forEach((item) => {
+            item.onclick = () => {
+                if (item.innerHTML == "Có") {
+                    alert("Hạnh Phúc vcl =))")
+                } else if (item.innerHTML == "Không") {
+                    item.style.display = "none";
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
